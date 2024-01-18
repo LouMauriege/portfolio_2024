@@ -86,7 +86,11 @@ $color-tertiary: white;
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
+
 
 a {
     color: inherit;
@@ -113,24 +117,37 @@ button {
     font-size: 16px;
 }
 
+p {
+    max-width: 60ch;
+}
+
 body {
     height: 100vh;
     padding: 0;
     margin: 0;
 }
 
+#svg-bank {
+    display: none;
+}
+
 #page-wrapper {
+    max-width: 1500px;
     height: 100%;
     padding: 40px 50px;
+    margin: auto;
     display: flex;
     flex-direction: column;
 
     nav, footer {
         flex-grow: 0;
+        flex-shrink: 0;
     }
 
     section {
         flex-grow: 1;
+        flex-shrink: 1;
+        overflow-y: scroll;
     }
 }
 
@@ -169,9 +186,84 @@ footer {
 }
 
 .menu-link {
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 section {
-    background-color: green;
+    // background-color: green;
+    display: flex;
+}
+
+#text-content {
+    // background-color: red;
+    min-height: 100%;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+#title-container {
+    & > * {
+        display: inline;
+        font-size: 3rem;
+        line-height: 1.1em;
+    }
+
+    p {
+        font-weight: 200;
+    }
+
+    h1, h2 {
+        font-weight: 400;
+    }
+}
+
+.bouton-lien {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.bouton-lien:has(> .arrow-up-right) {
+    align-items: start;
+
+    svg{
+        margin-top: 3px;
+    }
+}
+
+#liste-projets {
+    flex-grow: 1;
+    padding: 16px;
+    padding-right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.project-card {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 3px;
+
+    h3 {
+        font-weight: 500;
+    }
+}
+
+.project-card_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-card_firmware {
+    svg {
+        display: block;
+    }
 }

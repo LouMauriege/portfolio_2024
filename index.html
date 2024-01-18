@@ -1,22 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Lou Mauriège</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon/favicon.png" sizes="16x16">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Document</title>
 </head>
 <body>
+    <svg id="svg-bank" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="typescript" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.8516 1H3.14844C1.96189 1 1 1.96189 1 3.14844V20.8516C1 22.0381 1.96189 23 3.14844 23H20.8516C22.0381 23 23 22.0381 23 20.8516V3.14844C23 1.96189 22.0381 1 20.8516 1Z" fill="#3178C6"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6185 18.5065V20.6576C14.9682 20.8368 15.3817 20.9712 15.8592 21.0609C16.3367 21.1505 16.8399 21.1953 17.3689 21.1953C17.8845 21.1953 18.3742 21.146 18.8383 21.0474C19.3023 20.9488 19.7092 20.7864 20.0588 20.5601C20.4085 20.3338 20.6854 20.038 20.8893 19.6728C21.0933 19.3075 21.1953 18.8561 21.1953 18.3183C21.1953 17.9284 21.137 17.5867 21.0205 17.2932C20.9039 16.9997 20.7358 16.7386 20.5161 16.5101C20.2964 16.2815 20.0331 16.0765 19.726 15.895C19.4189 15.7135 19.0725 15.5421 18.687 15.3808C18.4045 15.2643 18.1512 15.1511 17.9271 15.0413C17.7029 14.9315 17.5124 14.8195 17.3555 14.7052C17.1985 14.5909 17.0775 14.4699 16.9923 14.3422C16.9072 14.2145 16.8645 14.07 16.8645 13.9086C16.8645 13.7608 16.9026 13.6274 16.9789 13.5087C17.0551 13.3899 17.1627 13.288 17.3017 13.2028C17.4407 13.1177 17.611 13.0516 17.8127 13.0045C18.0145 12.9575 18.2386 12.934 18.4852 12.934C18.6645 12.934 18.8539 12.9474 19.0534 12.9743C19.253 13.0012 19.4536 13.0426 19.6554 13.0986C19.8571 13.1547 20.0532 13.2253 20.2438 13.3104C20.4343 13.3955 20.6103 13.4941 20.7716 13.6062V11.5963C20.4444 11.4708 20.0868 11.3778 19.6991 11.3173C19.3113 11.2568 18.8663 11.2266 18.3642 11.2266C17.8531 11.2266 17.3689 11.2815 16.9116 11.3913C16.4544 11.501 16.052 11.6725 15.7045 11.9055C15.3571 12.1385 15.0825 12.4354 14.8808 12.7962C14.679 13.1569 14.5781 13.5882 14.5781 14.0901C14.5781 14.731 14.7631 15.2777 15.1329 15.7303C15.5028 16.1829 16.0643 16.5661 16.8175 16.8798C17.1134 17.0008 17.3891 17.1195 17.6446 17.236C17.9002 17.3526 18.121 17.4736 18.307 17.599C18.4931 17.7245 18.6399 17.8612 18.7475 18.0091C18.8551 18.1569 18.9089 18.325 18.9089 18.5132C18.9089 18.6522 18.8753 18.781 18.808 18.8998C18.7408 19.0185 18.6388 19.1216 18.502 19.209C18.3653 19.2964 18.1949 19.3647 17.991 19.414C17.7869 19.4633 17.5483 19.4879 17.2748 19.4879C16.8085 19.4879 16.3468 19.4061 15.8894 19.2426C15.4322 19.079 15.0085 18.8337 14.6185 18.5065ZM11.0023 13.2066H13.7617V11.4414H6.07031V13.2066H8.81627V21.0664H11.0023V13.2066Z" fill="white"/>
+        </symbol>    
+        <symbol id="javascript" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23 1H1V23H23V1Z" fill="#F7DF1E"/>
+            <path d="M15.7783 18.1876C16.2214 18.9111 16.7979 19.443 17.8176 19.443C18.6742 19.443 19.2214 19.0149 19.2214 18.4233C19.2214 17.7144 18.6592 17.4633 17.7164 17.0509L17.1995 16.8292C15.7077 16.1936 14.7167 15.3974 14.7167 13.7143C14.7167 12.1638 15.898 10.9835 17.7443 10.9835C19.0587 10.9835 20.0037 11.4409 20.6846 12.6387L19.0748 13.6724C18.7203 13.0368 18.3379 12.7864 17.7443 12.7864C17.1388 12.7864 16.755 13.1705 16.755 13.6724C16.755 14.2925 17.1391 14.5436 18.0261 14.9277L18.5429 15.1491C20.2994 15.9024 21.2912 16.6703 21.2912 18.3968C21.2912 20.258 19.8291 21.2777 17.8655 21.2777C15.9455 21.2777 14.7051 20.3628 14.0982 19.1636L15.7783 18.1876ZM8.47531 18.3667C8.80007 18.9429 9.0955 19.4301 9.80578 19.4301C10.485 19.4301 10.9135 19.1643 10.9135 18.131V11.1015H12.9808V18.159C12.9808 20.2996 11.7257 21.2739 9.89378 21.2739C8.23854 21.2739 7.27997 20.4173 6.79248 19.3855L8.47531 18.3667Z" fill="black"/>
+        </symbol>            
+        <symbol id="html" width="24" height="27" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.99453 23.3871L1 1H22.9277L20.9332 23.375L11.9457 25.8651" fill="#E44D26"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9519 5.57533H5.07373L5.82319 13.8677H11.9519V13.8738H15.3365L15.0162 17.4398L11.9579 18.2601L8.89356 17.4398L8.70015 15.2458H5.94407L6.33089 19.5552L11.9639 21.1266V21.1112L17.5728 19.5552L18.3283 11.1298H11.9519L8.33751 11.1298L8.08366 8.31932H11.9639L18.5761 8.31932L18.83 5.57533H11.9639H11.9519Z" fill="white"/>
+        </symbol>    
+        <symbol id="angular" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23 4.88254L22.2056 17.3571L14.6102 1L23 4.88254ZM17.7392 21.0128L12 24.2874L6.26083 21.0128L7.42811 18.1839H16.5719L17.7392 21.0128ZM12 7.20888L15.0074 14.5202H8.99264L12 7.20888ZM1.78628 17.3571L1 4.88254L9.38979 1L1.78628 17.3571Z" fill="url(#paint0_linear_1_49)"/>
+            <path d="M23 4.88254L22.2056 17.3571L14.6102 1L23 4.88254ZM17.7392 21.0128L12 24.2874L6.26083 21.0128L7.42811 18.1839H16.5719L17.7392 21.0128ZM12 7.20888L15.0074 14.5202H8.99264L12 7.20888ZM1.78628 17.3571L1 4.88254L9.38979 1L1.78628 17.3571Z" fill="url(#paint1_linear_1_49)"/>
+            <defs>
+            <linearGradient id="paint0_linear_1_49" x1="552.573" y1="2118.51" x2="2150.6" y2="1359.1" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E40035"/>
+            <stop offset="0.24" stop-color="#F60A48"/>
+            <stop offset="0.352" stop-color="#F20755"/>
+            <stop offset="0.494" stop-color="#DC087D"/>
+            <stop offset="0.745" stop-color="#9717E7"/>
+            <stop offset="1" stop-color="#6C00F5"/>
+            </linearGradient>
+            <linearGradient id="paint1_linear_1_49" x1="481.983" y1="281.789" x2="1574.76" y2="1528.35" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF31D9"/>
+            <stop offset="1" stop-color="#FF5BE1" stop-opacity="0"/>
+            </linearGradient>
+            </defs>
+        </symbol>    
+        <symbol id="sass" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.9437 10.1978C19.1762 10.2017 18.5092 10.3809 17.9506 10.6459C17.7457 10.2523 17.5407 9.90161 17.5046 9.64441C17.4644 9.34435 17.4162 9.16119 17.4644 8.80268C17.5126 8.44416 17.7296 7.93366 17.7256 7.89469C17.7216 7.85572 17.6774 7.67257 17.2353 7.66867C16.7933 7.66477 16.4116 7.75051 16.3674 7.86352C16.3232 7.97653 16.2388 8.23372 16.1825 8.49871C16.1062 8.88841 15.2985 10.2796 14.8364 11.0083C14.6877 10.7239 14.5591 10.4745 14.531 10.2757C14.4908 9.97565 14.4426 9.79249 14.4908 9.43398C14.539 9.07546 14.756 8.56496 14.752 8.52599C14.7479 8.48702 14.7037 8.30387 14.2617 8.29997C13.8197 8.29607 13.438 8.38181 13.3938 8.49482C13.3495 8.60783 13.3013 8.87282 13.2089 9.13002C13.1165 9.38721 12.0436 11.7098 11.7623 12.3099C11.6176 12.6178 11.4931 12.8633 11.4047 13.0308C11.4047 13.0308 11.4006 13.0425 11.3886 13.062C11.3122 13.2062 11.268 13.2841 11.268 13.2841C11.268 13.2841 11.268 13.2841 11.268 13.288C11.2078 13.3933 11.1435 13.4907 11.1113 13.4907C11.0872 13.4907 11.043 13.2101 11.1193 12.8282C11.2801 12.0215 11.6618 10.7667 11.6578 10.7239C11.6578 10.7005 11.7301 10.4823 11.4087 10.3692C11.0952 10.2562 10.9827 10.4433 10.9546 10.4433C10.9265 10.4433 10.9064 10.5095 10.9064 10.5095C10.9064 10.5095 11.256 9.09884 10.2393 9.09884C9.60442 9.09884 8.72841 9.77301 8.29442 10.3809C8.02117 10.5251 7.43851 10.833 6.81566 11.1642C6.57857 11.2928 6.33345 11.4214 6.1044 11.5422C6.08833 11.5266 6.07226 11.5071 6.05618 11.4916C4.82656 10.2173 2.55215 9.31707 2.64859 7.60632C2.68476 6.98281 2.90577 5.3461 7.01658 3.35867C10.4001 1.74144 13.0924 2.18959 13.5585 3.18331C14.2256 4.60179 12.1159 7.23611 8.61991 7.61801C7.28581 7.7622 6.58661 7.26339 6.4098 7.07634C6.22495 6.88149 6.19683 6.8698 6.12851 6.90877C6.016 6.96722 6.08833 7.14258 6.12851 7.2439C6.23299 7.5089 6.66296 7.97653 7.39029 8.20645C8.03323 8.40909 9.59638 8.5221 11.489 7.81286C13.6067 7.01788 15.2623 4.80833 14.7761 2.95729C14.2899 1.07897 11.0751 0.459355 8.03323 1.50763C6.22495 2.13114 4.26398 3.11316 2.85353 4.39135C1.17786 5.91116 0.912649 7.23221 1.02115 7.78558C1.41093 9.74963 4.20371 11.0278 5.32082 11.9748C5.26456 12.0059 5.21232 12.0332 5.16812 12.0566C4.60956 12.3255 2.47982 13.4049 1.94939 14.5467C1.34663 15.8405 2.04583 16.768 2.50795 16.8927C3.94251 17.2785 5.41726 16.5848 6.20888 15.4391C7.0005 14.2934 6.90406 12.8048 6.53839 12.1229C6.53437 12.1151 6.53035 12.1073 6.52231 12.0995C6.66698 12.0176 6.81566 11.9319 6.96032 11.8501C7.24562 11.6864 7.52691 11.5344 7.76801 11.4097C7.63139 11.7721 7.53093 12.2047 7.48271 12.8282C7.42243 13.5608 7.73185 14.5117 8.13771 14.8858C8.31853 15.0494 8.53151 15.0533 8.66813 15.0533C9.1423 15.0533 9.35528 14.6714 9.59236 14.2194C9.88168 13.666 10.1429 13.023 10.1429 13.023C10.1429 13.023 9.81739 14.7611 10.7014 14.7611C11.0229 14.7611 11.3484 14.3558 11.4931 14.1493C11.4931 14.1532 11.4931 14.1532 11.4931 14.1532C11.4931 14.1532 11.5011 14.1415 11.5172 14.1142C11.5493 14.0635 11.5694 14.0324 11.5694 14.0324C11.5694 14.0324 11.5694 14.0285 11.5694 14.0246C11.698 13.8063 11.9873 13.3114 12.4173 12.4892C12.9718 11.4292 13.5063 10.1042 13.5063 10.1042C13.5063 10.1042 13.5545 10.4277 13.7192 10.9655C13.8157 11.2811 14.0166 11.6279 14.1773 11.9631C14.0487 12.1384 13.9684 12.2359 13.9684 12.2359C13.9684 12.2359 13.9684 12.2359 13.9724 12.2398C13.8679 12.3723 13.7554 12.5164 13.6308 12.6567C13.1928 13.1633 12.6704 13.744 12.5981 13.9115C12.5137 14.1103 12.5338 14.2545 12.6946 14.3714C12.8111 14.4571 13.02 14.4688 13.233 14.4571C13.6268 14.4298 13.9041 14.3363 14.0407 14.2779C14.2537 14.2038 14.5028 14.0908 14.7359 13.9232C15.1659 13.6154 15.4271 13.175 15.4029 12.5944C15.3909 12.2748 15.2824 11.9553 15.1498 11.6552C15.19 11.6007 15.2261 11.5461 15.2663 11.4916C15.9454 10.529 16.4718 9.47295 16.4718 9.47295C16.4718 9.47295 16.5201 9.79639 16.6848 10.3342C16.7652 10.607 16.9299 10.9031 17.0746 11.1915C16.4357 11.6942 16.0419 12.2787 15.9012 12.6606C15.6481 13.3699 15.845 13.6894 16.2187 13.7635C16.3874 13.7985 16.6286 13.7206 16.8054 13.6466C17.0304 13.5764 17.2956 13.4556 17.5488 13.2763C17.9787 12.9685 18.3926 12.5398 18.3685 11.9592C18.3565 11.6942 18.2841 11.4331 18.1837 11.1798C18.7262 10.9616 19.4253 10.8408 20.3174 10.9421C22.2302 11.1603 22.6079 12.3177 22.5356 12.8048C22.4633 13.2919 22.0614 13.5569 21.9288 13.6388C21.7962 13.7206 21.752 13.7479 21.764 13.8063C21.7801 13.8921 21.8444 13.8882 21.9569 13.8726C22.1136 13.8453 22.9615 13.479 22.9977 12.5827C23.058 11.437 21.9328 10.1861 19.9437 10.1978ZM5.18821 15.0222C4.55331 15.6924 3.66926 15.9457 3.28751 15.7314C2.87764 15.5015 3.03837 14.5117 3.81794 13.8024C4.29211 13.3699 4.90291 12.9685 5.30876 12.723C5.40119 12.6684 5.53781 12.5905 5.70256 12.4931C5.73069 12.4775 5.74677 12.4697 5.74677 12.4697C5.77891 12.4502 5.81106 12.4307 5.84321 12.4112C6.12851 13.4244 5.85526 14.3168 5.18821 15.0222ZM9.80935 11.9748C9.58834 12.497 9.12623 13.8336 8.84494 13.7596C8.60384 13.6972 8.45516 12.684 8.79672 11.6825C8.96951 11.1798 9.33518 10.5797 9.54816 10.3459C9.89374 9.97175 10.2755 9.84705 10.3679 9.99903C10.4844 10.1978 9.94598 11.6474 9.80935 11.9748ZM13.6228 13.744C13.5304 13.7907 13.442 13.8219 13.4018 13.7985C13.3737 13.7829 13.442 13.7206 13.442 13.7206C13.442 13.7206 13.9202 13.2218 14.109 12.9958C14.2175 12.8633 14.3461 12.7074 14.4827 12.532C14.4827 12.5476 14.4827 12.5671 14.4827 12.5827C14.4827 13.1789 13.888 13.5803 13.6228 13.744ZM16.5643 13.0932C16.4959 13.0464 16.508 12.8906 16.737 12.4034C16.8255 12.2125 17.0344 11.8929 17.392 11.5851C17.4322 11.7098 17.4604 11.8306 17.4563 11.9436C17.4523 12.6957 16.8978 12.9763 16.5643 13.0932Z" fill="#CD6799"/>
+        </symbol>    
+    </svg>
     <div id="page-wrapper">
         <nav>
-            <div><a class="menu-link" href="">instagram</a></div>
-            <div><a class="menu-link" href="">CV</a></div>
-            <div><button class="menu-link" >contact</button></div>
+            <div><a class="menu-link" target="_blank" href="https://www.instagram.com/loumauriege">instagram</a></div>
+            <div><a class="menu-link" target="_blank" href="">CV</a></div>
+            <div><button class="menu-link">contact</button></div>
         </nav>
-        <section></section>
+        <section>
+            <div id="text-content">
+                <div id="title-container">
+                    <p>Bienvenue,</p>
+                    <br>
+                    <p>Je m'appelle</p>
+                    <h2>&nbsp;lou mauriège</h2>
+                    <p>,</p>
+                    <br>
+                    <p>Je suis</p>
+                    <h1>&nbsp;développeur full-stack</h1>
+                    <p>.</p>
+                </div>
+                <p id="description">Avec une maîtrise approfondie des languages de programmation web, je transforme des concepts créatifs en sites web interactifs. Ma démarche axée sur la collaboration, la créativité et la rigueur technique garantit des résultats à la hauteur de vos attentes. Contactez-moi pour améliorer la l'expérience utilisateur de votre site web.</p>
+                <a class="bouton-lien" href="">
+                    <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.85547 6.29096L9 3.14643L9.70711 3.85354L5.35355 8.20709L1 3.85354L1.70711 3.14643L4.85547 6.29479L4.85547 0H5.85547V6.29096Z" fill="#FF0000"/>
+                    </svg>                        
+                    <span>Télécharger mon CV</span>
+                </a>
+                <a class="bouton-lien" target="_blank" href="https://github.com/LouMauriege">
+                    <span>Consulter mon github</span>
+                    <svg class="arrow-up-right" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0V1V6H6V1.70517L1.35164 6.35353L0.644531 5.64642L5.29095 1L1 1L1 0H6H7Z" fill="#FF0000"/>
+                    </svg>
+                </a>
+            </div>
+            <div id="liste-projets">
+                <a class="project-card portfolio-v1" target="_blank" href="#">
+                    <div class="project-card_header">
+                        <p class="project-card_date">2022-2023</p>
+                        <div class="project-card_firmware">
+                            <svg width="24" height="24"><use href="#typescript"></use></svg>
+                            <svg width="24" height="27"><use href="#html"></use></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-card_title">Séléction de motion design</h3>
+                </a>
+                <a class="project-card portfolio-v1" target="_blank" href="#">
+                    <div class="project-card_header">
+                        <p class="project-card_date">2022-2023</p>
+                        <div class="project-card_firmware">
+                            <svg width="24" height="24"><use href="#typescript"></use></svg>
+                            <svg width="24" height="18"><use href="#sass"></use></svg>
+                            <svg width="24" height="27"><use href="#html"></use></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-card_title">Séléction de motion design</h3>
+                </a>
+                <a class="project-card portfolio-v1" target="_blank" href="#">
+                    <div class="project-card_header">
+                        <p class="project-card_date">2022-2023</p>
+                        <div class="project-card_firmware">
+                            <svg width="24" height="27"><use href="#html"></use></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-card_title">Séléction de motion design</h3>
+                </a>
+                <a class="project-card portfolio-v1" target="_blank" href="#">
+                    <div class="project-card_header">
+                        <p class="project-card_date">2022-2023</p>
+                        <div class="project-card_firmware">
+                            <svg width="24" height="24"><use href="#typescript"></use></svg>
+                            <svg width="24" height="18"><use href="#sass"></use></svg>
+                            <svg width="24" height="27"><use href="#html"></use></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-card_title">Séléction de motion design</h3>
+                </a>
+                <a class="project-card portfolio-v1" target="_blank" href="#">
+                    <div class="project-card_header">
+                        <p class="project-card_date">2022-2023</p>
+                        <div class="project-card_firmware">
+                            <svg width="24" height="18"><use href="#sass"></use></svg>
+                            <svg width="24" height="25"><use href="#angular"></use></svg>
+                            <svg width="24" height="24"><use href="#javascript"></use></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-card_title">Séléction de motion design</h3>
+                </a>
+                <a class="project-card portfolio-v1" target="_blank" href="#">
+                    <div class="project-card_header">
+                        <p class="project-card_date">2022-2023</p>
+                        <div class="project-card_firmware">
+                            <svg width="24" height="24"><use href="#javascript"></use></svg>
+                            <svg width="24" height="27"><use href="#html"></use></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-card_title">Séléction de motion design</h3>
+                </a>
+                <a class="project-card portfolio-v1" target="_blank" href="#">
+                    <div class="project-card_header">
+                        <p class="project-card_date">2022-2023</p>
+                        <div class="project-card_firmware">
+                            <svg width="24" height="24"><use href="#typescript"></use></svg>
+                            <svg width="24" height="18"><use href="#sass"></use></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-card_title">Séléction de motion design</h3>
+                </a>
+                <a class="project-card portfolio-v1" target="_blank" href="#">
+                    <div class="project-card_header">
+                        <p class="project-card_date">2022-2023</p>
+                        <div class="project-card_firmware">
+                            <svg width="24" height="27"><use href="#html"></use></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-card_title">Séléction de motion design</h3>
+                </a>
+            </div>
+        </section>
         <footer>
-            <a class="menu-link" href="">github</a>
-            <a class="menu-link" href="">instagram</a>
+            <a class="menu-link" target="_blank" href="https://github.com/LouMauriege">github</a>
+            <a class="menu-link" target="_blank" href="https://www.instagram.com/loumauriege">instagram</a>
          </footer>
     </div>
 </body>
