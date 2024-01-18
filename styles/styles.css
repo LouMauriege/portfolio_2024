@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "ClashGrotesk-Variable";
+  src: url("../assets/fonts/clash-grotesk/ClashGrotesk-Variable.woff2") format("woff2"), url("../assets/fonts/clash-grotesk/ClashGrotesk-Variable.woff") format("woff"), url("../assets/fonts/clash-grotesk/ClashGrotesk-Variable.ttf") format("truetype");
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashGrotesk-Extralight";
+  src: url("../assets/fonts/clash-grotesk/ClashGrotesk-Extralight.woff2") format("woff2"), url("../assets/fonts/clash-grotesk/ClashGrotesk-Extralight.woff") format("woff"), url("../assets/fonts/clash-grotesk/ClashGrotesk-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashGrotesk-Light";
+  src: url("../assets/fonts/clash-grotesk/ClashGrotesk-Light.woff2") format("woff2"), url("../assets/fonts/clash-grotesk/ClashGrotesk-Light.woff") format("woff"), url("../assets/fonts/clash-grotesk/ClashGrotesk-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashGrotesk-Regular";
+  src: url("../assets/fonts/clash-grotesk/ClashGrotesk-Regular.woff2") format("woff2"), url("../assets/fonts/clash-grotesk/ClashGrotesk-Regular.woff") format("woff"), url("../assets/fonts/clash-grotesk/ClashGrotesk-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashGrotesk-Medium";
+  src: url("../assets/fonts/clash-grotesk/ClashGrotesk-Medium.woff2") format("woff2"), url("../assets/fonts/clash-grotesk/ClashGrotesk-Medium.woff") format("woff"), url("../assets/fonts/clash-grotesk/ClashGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashGrotesk-Semibold";
+  src: url("../assets/fonts/clash-grotesk/ClashGrotesk-Semibold.woff2") format("woff2"), url("../assets/fonts/clash-grotesk/ClashGrotesk-Semibold.woff") format("woff"), url("../assets/fonts/clash-grotesk/ClashGrotesk-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashGrotesk-Bold";
+  src: url("../assets/fonts/clash-grotesk/ClashGrotesk-Bold.woff2") format("woff2"), url("../assets/fonts/clash-grotesk/ClashGrotesk-Bold.woff") format("woff"), url("../assets/fonts/clash-grotesk/ClashGrotesk-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+ * Début du styling du site
+ */
+/**
+ * Variables
+ */
+/**
+ * Reset
+ */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+/**
+ * Racine
+ */
+:root {
+  color: black;
+  font-family: "ClashGrotesk-Variable", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#page-wrapper {
+  height: 100%;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+}
+#page-wrapper nav, #page-wrapper footer {
+  flex-grow: 0;
+}
+#page-wrapper section {
+  flex-grow: 1;
+}
+
+nav, footer {
+  border-color: black;
+  border-width: 0px;
+  border-style: solid;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom-width: 1px;
+}
+nav div {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+nav div:first-of-type {
+  justify-content: left;
+}
+nav div:last-of-type {
+  justify-content: right;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top-width: 1px;
+}
+
+.menu-link {
+  padding: 10px 0;
+}
+
+section {
+  background-color: green;
+}/*# sourceMappingURL=styles.css.map */
