@@ -221,7 +221,7 @@ section {
 }
 
 .bouton-github {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -345,6 +345,11 @@ section {
   #liste-projets {
     padding: 0;
     overflow: visible;
+  }
+  .liste-projets_title {
+    font-weight: 200;
+    font-size: 2rem;
+    margin-top: 16px;
   }
   .project-card {
     margin-right: auto;
