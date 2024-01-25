@@ -238,6 +238,10 @@ section {
   gap: 48px;
 }
 
+#liste-projets:has(> .project-card:hover) {
+  color: grey;
+}
+
 #liste-projets::-webkit-scrollbar {
   display: none; /* Chrome, Safari and Opera */
 }
@@ -263,8 +267,16 @@ section {
   line-height: 1;
 }
 
+.project-card:hover {
+  color: black;
+}
+
 .project-card_tech {
   font-weight: 400;
+}
+
+.project-card_title-wrapper svg {
+  display: none;
 }
 
 .project-card_title {
@@ -346,6 +358,9 @@ section {
     padding: 0;
     overflow: visible;
   }
+  #liste-projets:has(> .project-card:hover) {
+    color: black;
+  }
   .liste-projets_title {
     font-weight: 200;
     font-size: 2rem;
@@ -361,6 +376,12 @@ section {
   .project-card_tech {
     grid-column: 1/3;
     grid-row: 2/3;
+  }
+  .project-card_title-wrapper {
+    display: flex;
+  }
+  .project-card_title-wrapper svg {
+    display: block;
   }
   .project-card_title {
     font-size: 1.5rem;
