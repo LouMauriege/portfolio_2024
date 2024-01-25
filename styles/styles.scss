@@ -142,8 +142,7 @@ body {
     section {
         flex-grow: 1;
         flex-shrink: 1;
-        overflow-y: scroll;
-        // overflow: hidden;
+        overflow: hidden;
     }
 }
 
@@ -283,12 +282,12 @@ section {
 }
 
 #liste-projets::-webkit-scrollbar {
-    display: none;
+    display: none; /* Chrome, Safari and Opera */
 }
 
 #liste-projets {
-    -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
 }
 
 .project-card {
@@ -380,14 +379,16 @@ section {
     footer {
         display: none;
     }
+    #page-wrapper {
+        section {
+            flex-direction: column;
+            overflow-y: scroll;
+            gap: 32px;
+            padding: 32px 0;
 
-    section {
-        flex-direction: column;
-        gap: 32px;
-        padding: 32px 0;
-
-        & > * {
-            width: auto;
+            & > * {
+                width: auto;
+            }
         }
     }
 
