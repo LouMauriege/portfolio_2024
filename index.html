@@ -7,15 +7,22 @@
     <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/images/favicon/favicon.png" sizes="16x16">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="script.js" defer></script> 
 </head>
 <body>
     <div id="page-wrapper">
         <nav>
             <div class="flex-on-mobile"><a class="menu-link" target="_blank" href="https://www.instagram.com/loumauriege">instagram</a></div>
             <div><a class="menu-link" target="_blank" href="assets/download/CV_Mauriege-Lou_230124.pdf" download>CV</a></div>
-            <div><button class="menu-link">contact</button></div>
+            <div><button id="contact-modal_button" class="menu-link">contact</button></div>
         </nav> 
         <section>
+            <div id="contact-modal">
+                <div class="contact-modal_wrapper">
+                    <button id="contact-modal_close" class="contact-modal_close">fermer</button>
+                    <a class="contact-modal_link" href="mailto:lou.mauriege@laposte.net">lou.mauriege@laposte.net</a>
+                </div>
+            </div>
             <div id="text-content">
                 <div id="title-container">
                     <p>Bienvenue,</p>
@@ -27,12 +34,6 @@
                     <h1>développeur full&#8209;stack.</h1>
                 </div>
                 <p id="description">Avec une maîtrise approfondie des languages de programmation web, je transforme des concepts créatifs en sites web interactifs. Ma démarche axée sur la collaboration, la créativité et la rigueur technique garantit des résultats à la hauteur de vos attentes. Contactez-moi pour améliorer la l'expérience utilisateur de votre site web.</p>
-                <!-- <a class="bouton-lien" href="">
-                    <svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.85547 6.29096L9 3.14643L9.70711 3.85354L5.35355 8.20709L1 3.85354L1.70711 3.14643L4.85547 6.29479L4.85547 0H5.85547V6.29096Z" fill="#FF0000"/>
-                    </svg>                        
-                    <span>Télécharger mon CV</span>
-                </a> -->
                 <a class="bouton-lien flex-on-mobile" target="_blank" href="https://github.com/LouMauriege">
                     <span class="bouton-github">Consulter mon github</span>
                     <svg class="arrow-up-right" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">

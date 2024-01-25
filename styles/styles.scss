@@ -130,6 +130,7 @@ body {
     height: 100%;
     padding: 40px 50px;
     margin: auto;
+    position: relative;
     display: flex;
     flex-direction: column;
 
@@ -183,6 +184,42 @@ footer {
 section {
     // background-color: green;
     display: flex;
+}
+
+#contact-modal {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    .contact-modal_wrapper {
+        background: $color-tertiary;
+        padding: 48px;
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+        .contact-modal_close {
+            margin-right: 0;
+            margin-left: auto;
+            display: block;
+            padding: 0 2px;
+            line-height: 1em;
+            background-color: $color-primary;
+            text-shadow: .5px .5px 1px rgba(0, 0, 0, 0.2);
+        }
+    
+        .contact-modal_link {
+            margin-top: 16px;
+            display: block;
+            cursor: alias;
+        }
+    }
 }
 
 #text-content {
@@ -351,6 +388,12 @@ section {
 
         & > * {
             width: auto;
+        }
+    }
+
+    #contact-modal {
+        .contact-modal_wrapper {
+            padding: 24px;
         }
     }
 
