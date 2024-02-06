@@ -238,10 +238,6 @@ section {
   gap: 48px;
 }
 
-#liste-projets:has(> .project-card:hover) {
-  color: grey;
-}
-
 #liste-projets::-webkit-scrollbar {
   display: none; /* Chrome, Safari and Opera */
 }
@@ -262,13 +258,14 @@ section {
   -moz-column-gap: 12px;
        column-gap: 12px;
   align-items: baseline;
+  transition: padding-right 200ms ease-out;
 }
 .project-card > * {
   line-height: 1;
 }
 
 .project-card:hover {
-  color: black;
+  padding-right: 5px;
 }
 
 .project-card_tech {
@@ -357,9 +354,6 @@ section {
   #liste-projets {
     padding: 0;
     overflow: visible;
-  }
-  #liste-projets:has(> .project-card:hover) {
-    color: black;
   }
   .liste-projets_title {
     font-weight: 200;

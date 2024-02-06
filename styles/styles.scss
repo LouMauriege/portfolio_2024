@@ -281,9 +281,9 @@ section {
     gap: 48px;
 }
 
-#liste-projets:has(> .project-card:hover) {
-    color: grey;
-}
+// #liste-projets:has(> .project-card:hover) {
+//     color: grey;
+// }
 
 #liste-projets::-webkit-scrollbar {
     display: none; /* Chrome, Safari and Opera */
@@ -303,7 +303,7 @@ section {
     grid-template-rows: max-content max-content;
     column-gap: 12px;
     align-items: baseline;
-    // transition: color 100ms linear;
+    transition: padding-right 200ms ease-out;
 
     & > * {
         line-height: 1;
@@ -311,7 +311,7 @@ section {
 }
 
 .project-card:hover {
-    color: $color-secondary;
+    padding-right: 5px;
 }
 
 .project-card_tech {
@@ -428,9 +428,9 @@ section {
         overflow: visible;
     }
 
-    #liste-projets:has(> .project-card:hover) {
-        color: $color-secondary;
-    }
+    // #liste-projets:has(> .project-card:hover) {
+    //     color: $color-secondary;
+    // }
 
     .liste-projets_title {
         font-weight: 200;
